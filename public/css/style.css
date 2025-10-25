@@ -1,0 +1,25 @@
+:root{--bg:#07070a;--card:#0f1115;--accent:#6ef3c5;--muted:#aeb0b6}
+*{box-sizing:border-box;font-family:Inter, system-ui, Arial}
+html,body{height:100%;margin:0;background:linear-gradient(180deg,#050508 0%, #0a0b0f 100%);color:#e8eef1}
+.dark .center-wrap{height:100vh;display:flex;align-items:center;justify-content:center}
+
+.card-3d{width:360px;height:420px;position:relative;transform-style:preserve-3d;perspective:1000px}
+.card-front{width:100%;height:100%;background:linear-gradient(135deg,rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:18px;backdrop-filter:blur(6px);box-shadow:0 20px 50px rgba(0,0,0,0.7);padding:36px;display:flex;flex-direction:column;align-items:center;justify-content:center;transform:translateZ(40px) rotateX(6deg)}
+.card-shadow{position:absolute;inset:0;border-radius:18px;transform:translateZ(0);filter:blur(20px);opacity:0.15}
+.logo-3d{font-size:32px;letter-spacing:3px;text-shadow:0 4px 30px rgba(110,243,197,0.08)}
+.field{margin:14px 0;width:100%}
+.field input{width:100%;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);background:rgba(255,255,255,0.02);color:#fff}
+.btn{margin-top:12px;padding:10px 20px;border-radius:12px;border:none;cursor:pointer;background:linear-gradient(90deg,var(--accent),#53c6ff);box-shadow:0 8px 30px rgba(110,243,197,0.12);font-weight:600}
+
+/* Dashboard */
+.nav{height:70px;display:flex;align-items:center;padding:10px 28px;background:rgba(255,255,255,0.02);box-shadow:0 6px 30px rgba(0,0,0,0.6)}
+.logo{font-weight:700}
+.dashboard{display:flex;align-items:center;justify-content:center;height:calc(100vh - 70px)}
+.panel{display:flex;gap:24px;flex-direction:column}
+.big-btn{padding:22px 28px;font-size:18px;border-radius:14px;border:none;background:linear-gradient(135deg,#0a6 40%,#2bd3ff 100%);box-shadow:0 20px 50px rgba(0,0,0,0.6);cursor:pointer}
+
+.page{padding:40px;max-width:900px;margin:40px auto;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:16px}
+.result-area{margin-top:18px;padding:16px;background:rgba(255,255,255,0.01);border-radius:10px}
+
+/* small responsive */
+@media(max-width:600px){.card-3d{width:300px;height:380px}}
